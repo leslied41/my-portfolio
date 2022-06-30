@@ -1,0 +1,45 @@
+.project-main {
+  padding: 100px;
+  padding-top: 50px;
+  min-height: calc(100vh - 80px);
+  width: 100%;
+  color: white;
+  @media screen and (max-width: 768px) {
+    padding: 50px;
+  }
+  h1 {
+    text-align: start;
+  }
+  .project-info {
+    display: flex;
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+    }
+
+    .project-skills {
+      flex: 1;
+      margin-top: 50px;
+      .project-icon {
+        margin-top: 20px;
+        svg {
+          font-size: 35px;
+          margin-right: 15px;
+          color: white;
+          &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .project-des {
+      flex: 2;
+      margin-top: 50px;
+    }
+  }
+  .img-div {
+    margin-top: 50px;
+    width: 100%;
+    height: calc(100vh - 80px);
+  }
+}

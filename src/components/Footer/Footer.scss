@@ -1,0 +1,42 @@
+@use '../../styles/variable.scss' as v;
+.footer {
+  clip-path: ellipse(58% 100% at 50% 100%);
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  button {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+    svg {
+      font-size: 30px;
+    }
+  }
+  .socialMedia svg {
+    color: black;
+    margin: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    @media only screen and (max-width: 640px) {
+      font-size: 40px;
+      margin: 10px;
+    }
+  }
+
+  p {
+    color: black;
+  }
+}

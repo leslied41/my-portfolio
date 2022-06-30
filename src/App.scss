@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Space+Mono:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Zichtbaar;
+}
+@font-face {
+  font-family: "Zichtbaar";
+  src: url("./assets/font/Web/Zichtbaar-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.App {
+  background-color: black;
+}
+
+.horizontal-line {
+  width: 100%;
+  margin: auto;
+  height: 0.5px;
+  background-color: gray;
+  border: none;
+}

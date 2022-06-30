@@ -1,0 +1,62 @@
+.projectItem {
+  width: 100%;
+  height: auto;
+  // aspect-ratio: 16/9;
+  position: relative;
+
+  &:hover {
+    .overlay {
+      transition: transform 0.5s ease-in-out;
+      transform: scaleY(1);
+      transform-origin: center;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    opacity: 1;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center;
+    transform: scaleY(0);
+    p {
+      font-weight: bold;
+      font-size: 20px;
+      color: black;
+    }
+    a {
+      button {
+        padding: 5px 15px;
+        border: solid 1.5px brown;
+        transition: all 0.3s ease-in-out;
+        font-family: "Hind Siliguri", sans-serif;
+        font-weight: 400;
+        font-size: large;
+
+        &:hover {
+          background-color: brown;
+          opacity: 1;
+          color: white;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
