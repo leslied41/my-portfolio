@@ -59,10 +59,27 @@ const ContactModel: FC<Props> = ({ openModel, setOpenModel }) => {
         </div>
 
         <div className="platforms">
-          <InstagramIcon />
-          <TwitterIcon />
-          <FacebookIcon />
-          <LinkedInIcon />
+          <a
+            href="https://www.instagram.com/leslied41/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <InstagramIcon className="icon" />
+          </a>
+          <a
+            href="https://www.facebook.com/leslie.duan.96"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FacebookIcon className="icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/leslie-duan-641853121/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedInIcon className="icon" />
+          </a>
         </div>
       </div>
     </div>

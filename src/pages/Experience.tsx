@@ -19,35 +19,41 @@ const Experience = (props: Props) => {
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title">My Colldge</h3>
-          <p>Bachelor Degree</p>
+          <h3 className="vertical-timeline-element-title">
+            Henan Institute of Science and Technology
+          </h3>
+          <p>Bachelor of electrical engineering and automation</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element-education"
-          date="2008-2012"
+          date="2012-2019"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title">My Colldge</h3>
-          <p>Bachelor Degree</p>
+          <h3 className="vertical-timeline-element-title">
+            Xinxiang Civil Air Defense Office
+          </h3>
+          <p>Electrical Engineer</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element-education"
-          date="2008-2012"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
-          icon={<SchoolIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">My Colldge</h3>
-          <p>Bachelor Degree</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element-education"
-          date="2008-2012"
+          date="2019-2021"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">My Colldge</h3>
-          <p>Bachelor Degree</p>
+          <h3 className="vertical-timeline-element-title">
+            University of Tasmania
+          </h3>
+          <p>Master of Information&Communication Technology</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element-education"
+          date="2021-current"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">Funkie Loopie</h3>
+          <p>Web Developer</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
