@@ -12,6 +12,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Project from "./pages/Project";
 import SimpleNavbar from "./components/SimpleNavbar/SimpleNavbar";
+import Head from "./components/head/Head";
 function App() {
   const HomeLayout = () => {
     return (
@@ -35,8 +36,10 @@ function App() {
   };
   return (
     <div className="App">
+      <Head />
       <Router>
         {/* <Navbar /> */}
+
         <Routes>
           <Route path="/" element={<HomeLayout />}>
             <Route path="/" element={<Home />} />
