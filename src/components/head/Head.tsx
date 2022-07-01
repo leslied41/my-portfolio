@@ -25,7 +25,13 @@ const Head = (props: Props) => {
           sizes="16x16"
           href="../../../public/favicon-16x16.png"
         />
-        <link rel="manifest" href="../../../public/site.webmanifest"></link>
+        <link rel="manifest" href="../../../public/site.webmanifest" />
+        <link
+          rel="mask-icon"
+          href="../../../public/safari-pinned-tab.svg"
+          color="#5bbad5"
+        ></link>
+
         <meta name="title" content="Leslie's Portfolio" />
         <meta
           name="description"
