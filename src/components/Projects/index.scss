@@ -5,6 +5,9 @@
   margin-top: 50px;
   padding-bottom: 100px;
   color: white;
+  @media screen and (max-width: 420px) {
+    margin-top: 0px;
+  }
   h1 {
     font-size: 60px;
     @media screen and (max-width: 768px) {
