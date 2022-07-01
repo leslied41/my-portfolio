@@ -11,8 +11,15 @@ import "aos/dist/aos.css";
 interface Props {}
 
 const Home = (props: Props) => {
+  const [mobileMode, setMobileMode] = useState(false);
   const [letterClass, setlLetterClass] = useState("text-animate");
   const nameArray = ["L", "e", "s", "l", "i", "e"];
+
+  useEffect(() => {
+    setTimeout(() => {
+      setMobileMode(true);
+    }, 3000);
+  }, []);
 
   useEffect(() => {
     AOS.init();
@@ -25,8 +32,8 @@ const Home = (props: Props) => {
   return (
     <div className="Home" id="homeAnchor">
       <div className="header">
-        <div className="des">
-          <h2>
+        <div className={mobileMode ? "des animation-disappear" : "des"}>
+          <h2 className={mobileMode ? "animation-disappear" : ""}>
             <span className={`${letterClass} _1`}>Hi,</span>
             <span className={`${letterClass} _2`}> My</span>
             <span className={`${letterClass} _3`}> Name</span>

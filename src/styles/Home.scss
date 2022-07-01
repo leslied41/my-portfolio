@@ -21,6 +21,13 @@
 
     .des {
       position: relative;
+      &.animation-disappear {
+        &::after {
+          @media screen and (max-width: 420px) {
+            opacity: 1;
+          }
+        }
+      }
       &::after {
         color: white;
         content: "A Web developer with a passion for learning and challenging";
@@ -32,6 +39,7 @@
         transform: translate3d(0, -50%, 0);
         opacity: 0;
         transition: all 0.3s ease-in-out;
+
         @media screen and (max-width: 420px) {
           font-size: 40px;
         }
@@ -41,6 +49,11 @@
         color: white;
         transition: all 0.3s ease-in-out;
         text-align: center;
+        &.animation-disappear {
+          @media screen and (max-width: 420px) {
+            opacity: 0;
+          }
+        }
 
         @media screen and (max-width: 768px) {
           font-size: 50px;
