@@ -1,5 +1,7 @@
 import { EndOfLineState } from "typescript";
 import phd from "../assets/phd.png";
+import teams from "../assets/teams.png";
+import robot from "../assets/robot.png";
 
 export const projectData = [
   {
@@ -16,7 +18,7 @@ export const projectData = [
   {
     id: 1,
     name: "CRUD APP",
-    image: phd,
+    image: teams,
     skills: "Node.js Express MongoDB Mongoose JWT Postman",
     url: "https://premier-league-api-frontend.herokuapp.com/",
     github: [
@@ -29,25 +31,17 @@ export const projectData = [
         name: "Back-End",
       },
     ],
+    des: "This is a full stack web applciation combined with a ReactJs front-end application and a RestApi created using Node.js, Express, and MongoDB. The React web application allows uesrs to add, edit, delete, sort and search premier leauge teams. Authentication and authorization are implemented through JWT(Json Web Token), users with different role have different authorization.",
   },
   {
     id: 2,
     name: "Movable Robot",
-    image: phd,
+    image: robot,
     skills: "HTML CSS Vanila Javascript",
     url: "https://epic-swartz-3d501b.netlify.app/",
     github: [
       { name: "Github", url: "https://github.com/leslied41/robot_challenge" },
     ],
-    des: "",
-  },
-  {
-    id: 3,
-    name: "PHD Art Gallery",
-    image: phd,
-    skills: "Next.js Sanity",
-    url: "",
-    github: [],
-    des: "",
+    des: "This vanilla javascript web application can simulate a toy robot moving on a square tabletop, of dimensions 5 units x 5 units. Multiple robots can be added on the table and only active one can roam around the surface of the table but falling from the table be prevented.",
   },
 ];
