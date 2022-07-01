@@ -6,7 +6,7 @@
 
   &:hover {
     .overlay {
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.2s ease-in-out;
       transform: scaleY(1);
       transform-origin: center;
     }
@@ -26,25 +26,36 @@
     opacity: 1;
     overflow: hidden;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     transform-origin: center;
     transform: scaleY(0);
     p {
       font-weight: bold;
       font-size: 20px;
       color: black;
+      font-family: "Hind Siliguri", sans-serif;
     }
+    p:nth-child(2n) {
+      font-family: monospace;
+      font-weight: lighter;
+      font-size: 15px;
+      color: darkslategray;
+    }
+
     a {
+      text-decoration: none;
       button {
         padding: 5px 15px;
-        border: solid 1.5px brown;
+        border: solid 1.5px darkslategray;
         transition: all 0.3s ease-in-out;
         font-family: "Hind Siliguri", sans-serif;
         font-weight: 400;
         font-size: large;
+        text-transform: capitalize;
+        color: darkslategray;
 
         &:hover {
-          background-color: brown;
+          background-color: darkslategray;
           opacity: 1;
           color: white;
           transition: all 0.3s ease-in-out;

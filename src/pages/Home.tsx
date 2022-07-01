@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from "react";
-import EmailIcon from "@material-ui/icons/Email";
-import GithubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import "../styles/Home.scss";
 import AnimatedLetters from "../components/AnimatedLetters";
 import "animate.css";
@@ -26,33 +23,31 @@ const Home = (props: Props) => {
     };
   }, []);
   return (
-    <main>
-      <div className="Home" id="homeAnchor">
-        <div className="header">
-          <div className="des">
-            <h2>
-              <span className={`${letterClass} _1`}>Hi,</span>
-              <span className={`${letterClass} _2`}> My</span>
-              <span className={`${letterClass} _3`}> Name</span>
-              <span className={`${letterClass} _4`}> is</span>
-              <span> </span>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={nameArray}
-                idx={5}
-              />
-            </h2>
-          </div>
+    <div className="Home" id="homeAnchor">
+      <div className="header">
+        <div className="des">
+          <h2>
+            <span className={`${letterClass} _1`}>Hi,</span>
+            <span className={`${letterClass} _2`}> My</span>
+            <span className={`${letterClass} _3`}> Name</span>
+            <span className={`${letterClass} _4`}> is</span>
+            <span> </span>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={5}
+            />
+          </h2>
         </div>
-        <hr className="horizontal-line" data-aos="fade-up" />
-        <About />
-        <hr className="horizontal-line" data-aos="fade-up" />
-        <Skills />
-        <hr className="horizontal-line" data-aos="fade-up" />
-        <Projects />
-        <hr className="horizontal-line" data-aos="fade-up" />
       </div>
-    </main>
+      <hr className="horizontal-line" data-aos="fade-up" />
+      <About />
+      <hr className="horizontal-line" data-aos="fade-up" />
+      <Skills />
+      <hr className="horizontal-line" data-aos="fade-up" />
+      <Projects />
+      <hr className="horizontal-line" data-aos="fade-up" />
+    </div>
   );
 };
 

@@ -13,8 +13,16 @@ const Projects = (props: Props) => {
       </h1>
       <div className="projectList" data-aos="fade-up">
         {projectData.map((p) => {
-          const { name, id, image } = p;
-          return <ProjectItem id={id} name={name} image={image} key={id} />;
+          const { name, id, image, skills } = p;
+          return (
+            <ProjectItem
+              id={id}
+              name={name}
+              image={image}
+              key={id}
+              skills={skills}
+            />
+          );
         })}
       </div>
     </div>

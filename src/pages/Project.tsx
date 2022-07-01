@@ -5,9 +5,12 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@mui/icons-material/Link";
 import "../styles/Project.scss";
 
-interface Props {}
+type githubType = {
+  name: string;
+  url: string;
+};
 
-const Project = (props: Props) => {
+const Project = () => {
   const { id } = useParams();
   const data = id ? projectData[Number(id)] : null;
   return (
@@ -24,14 +27,32 @@ const Project = (props: Props) => {
           <div className="project-info">
             <div className="project-skills">
               <p>
-                <b>Skills:</b>
+                <b>Skills: </b>
                 {data.skills}
               </p>
               <div className="project-icon">
-                <a href={data.github} target="_blank" rel="noreferrer">
-                  <GithubIcon />
-                </a>
-                <a href={data.url} target="_blank" rel="noreferrer">
+                {data.github.map((g: githubType | string, i: number) => {
+                  if (typeof g === "string") return;
+                  const { name, url } = g;
+                  return (
+                    <a
+                      href={url}
+                      key={i}
+                      target="_blank"
+                      rel="noreferrer"
+                      data-name={name}
+                    >
+                      <GithubIcon className="github-icon" />
+                    </a>
+                  );
+                })}
+
+                <a
+                  href={data.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  data-name="Website"
+                >
                   <LinkIcon />
                 </a>
               </div>
