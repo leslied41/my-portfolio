@@ -28,7 +28,7 @@ const Experience = (props: Props) => {
           className="vertical-timeline-element-education"
           date="2012-2019"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
-          icon={<SchoolIcon />}
+          icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Xinxiang Civil Air Defense Office
@@ -39,7 +39,7 @@ const Experience = (props: Props) => {
           className="vertical-timeline-element-education"
           date="2019-2021"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
-          icon={<WorkIcon />}
+          icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             University of Tasmania

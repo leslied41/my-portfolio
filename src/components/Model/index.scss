@@ -14,6 +14,9 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  @media screen and (max-width: 480px) {
+    width: calc(100% - 40px);
+  }
 
   .socialMedia {
     display: flex;
