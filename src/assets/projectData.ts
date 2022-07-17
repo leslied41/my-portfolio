@@ -2,6 +2,7 @@ import { EndOfLineState } from "typescript";
 import phd from "../assets/phd.png";
 import teams from "../assets/teams.png";
 import robot from "../assets/robot.png";
+import honn from "../assets/honn.png";
 
 export const projectData = [
   {
@@ -44,5 +45,16 @@ export const projectData = [
       { name: "Github", url: "https://github.com/leslied41/art_gallery_hk" },
     ],
     des: "This PHD Group Project is developed for this contemporary art gallery based in Hongkong. I cooperated with the UI/UX designer and developed this whole project using Next.js for the front-end and headless CMS Sanity as the back-end. For the front-end development, I used a lot SVG manipulation to implement highly interaction with SVG image like changing its fill color or image when hovering. This web applicaiton is highly cusomizable, which means that it allows client to uddate this applicaliton's UX and layout by changing corresponding options or content sotred in Sanity.",
+  },
+  {
+    id: 3,
+    name: "HONN Jewelry Store (in progress)",
+    image: honn,
+    skills: "Next.js Shopify",
+    url: "https://honn.vercel.app/",
+    github: [
+      { name: "Github", url: "https://github.com/leslied41/honn-jewelry" },
+    ],
+    des: "This project is devloped based on shopify's storefront api that allow users to grab shopify data and integrate into customized front-end website",
   },
 ];
